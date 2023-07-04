@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Item from './components/List'
-import List from './components/List/Item'
+import List from './components/List'
 
 import './App.css'
 
@@ -9,7 +9,6 @@ function App() {
 
   return (
     <>
-      <Item></Item>
       <List></List>
     </>
   )

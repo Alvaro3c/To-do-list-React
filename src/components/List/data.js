@@ -1,3 +1,3 @@
-const data = ['Compra', 'limpiar la casa', 'sacar al perro']
+const data = ['Go Shopping', 'clean house', 'take the dog', 'clean the car']
 
 export default data
