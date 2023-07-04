@@ -1,0 +1,38 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    background-color: #447d77;
+    border-radius: 30px;
+    height: 2em;
+    margin-right: 20px;
+    width: 250px;
+}
+
+button {
+    color: #254441;
+    font-weight: 600;
+    font-size: 1em;
+    background-color: #589f99;
+    border: none;
+}
+
+#reset {
+    width: 50%;
+    height: 3em;
+    margin: 0 25%;
+    border-radius: 20px;
+}
+
+#add-btn {
+    padding: 5px 20px;
+    border-radius: 20px;
+}

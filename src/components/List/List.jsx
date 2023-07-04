@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from './data'
 import Item from './Item/Item'
+import './List.css'
 
 const List = () => {
   const [taskArray, setTaskArray] = useState(data)
@@ -28,11 +29,13 @@ const List = () => {
   }
   return (
     <>
-      <form action="">
-        <h1>To do list</h1>
-        <input id='input' type="text" onChange={(e) => { update(e) }} />
-        <button onClick={(e) => { addTask(e) }}>ADD</button>
-      </form>
+      <h1>To do list</h1>
+      <section>
+        <form action="">
+          <input id='input' type="text" onChange={(e) => { update(e) }} />
+          <button id="add-btn" onClick={(e) => { addTask(e) }}>ADD</button>
+        </form>
+      </section>
       <ul>
         {
           taskArray.map((element) => {
@@ -40,7 +43,7 @@ const List = () => {
           })
         }
       </ul>
-      <button onClick={() => { reset() }}>Reset</button>
+      <button id="reset" onClick={() => { reset() }}>Reset</button>
     </>
   )
 };

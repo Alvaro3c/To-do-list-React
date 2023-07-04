@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Item.css'
 
 const Item = ({ task, setTaskArray, taskArray }) => {
   function deleteTask() {
@@ -10,12 +11,14 @@ const Item = ({ task, setTaskArray, taskArray }) => {
 
   return (
     <>
-      <li style={{ display: 'flex', width: '100%', justifyContent: 'space-between', background: 'coral' }}>
-        <p>
-          {task}
-        </p>
-        <button onClick={() => { deleteTask() }}>Delete</button>
-      </li>
+      <ul>
+        <li>
+          <p>
+            {task}
+          </p>
+          <button id="delete-btn" onClick={() => { deleteTask() }}>Delete</button>
+        </li>
+      </ul>
 
     </>
 
